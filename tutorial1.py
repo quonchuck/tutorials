@@ -11,12 +11,16 @@ blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
 
 # Define a line style that is a thin (1 pixel) wide black line
-thinline = LineStyle(1, black)
+thinline = LineStyle(1, green)
 # A graphics asset that represents a rectangle
 rectangle = RectangleAsset(50, 20, thinline, blue)
 
 # Now display a rectangle
-Sprite(rectangle)
+Sprite(rectangle, (200, 50))
+
+thinline = LineStyle(3, blue)
+ellipse = EllipseAsset(50,20, thinline, black)
+Sprite(ellipse)
 
 myapp = App()
 myapp.run()
