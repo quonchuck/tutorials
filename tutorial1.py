@@ -20,7 +20,7 @@ Sprite(rectangle, (200, 50))
 
 thinline = LineStyle(3, blue)
 ellipse = EllipseAsset(50,20, thinline, black)
-Sprite(ellipse)
+Sprite(ellipse, (400, 400))
 
 myapp = App()
 myapp.run()
